@@ -50,4 +50,6 @@ vi /etc/crontab
 * */1 * * * root swapoff -a && swapon -a
 systemctl enable crond.service
 systemctl start crond
+
+vi /etc/ssh/sshd_config  
 ```
