@@ -52,4 +52,6 @@ systemctl enable crond.service
 systemctl start crond
 
 vi /etc/ssh/sshd_config  
+
+yum install mtr -y
 ```
