@@ -1,4 +1,9 @@
 # backup
+
+线路查询
+https://bgp.he.net/
+https://ip.awk.sh
+
 备用命令
 
 bbr
