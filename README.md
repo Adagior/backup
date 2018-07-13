@@ -21,10 +21,10 @@ shadowsocksr
   ./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
 ```
 
--fail2ban
--```
--wget --no-check-certificate https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
--```
+fail2ban
+```
+wget --no-check-certificate https://raw.githubusercontent.com/FunctionClub/Fail2ban/master/fail2ban.sh && bash fail2ban.sh 2>&1 | tee fail2ban.log
+```
 
 ```
 firewall-cmd --zone=public --permanent --add-port=80/udp
