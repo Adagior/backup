@@ -62,5 +62,8 @@ systemctl start crond
 
 vi /etc/ssh/sshd_config  
 
+/etc/rc.d/rc.local
+nohup ？？？ >/dev/null 2>&1 &
+
 yum install mtr -y
 ```
