@@ -43,7 +43,7 @@ firewall-cmd --zone=public --permanent --add-port=1200/udp
 firewall-cmd --zone=public --permanent --add-port=27000-27050/udp
 firewall-cmd --zone=public --permanent --add-port=27000-27050/tcp
 
-firewall-cmd --zone=public --permanent --remove-port=2222/tcp
+firewall-cmd --zone=public --permanent --remove-service=ssh
 
 systemctl restart firewalld.service
 
