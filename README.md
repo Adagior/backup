@@ -8,7 +8,10 @@ https://ip.awk.sh
 
 备用命令
 
-
+v2ray      https://233yes.com/post/1/
+```
+bash <(curl -s -L https://233yes.com/v2ray.sh)
+```
 
 
 bbr
