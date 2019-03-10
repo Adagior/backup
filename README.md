@@ -2,11 +2,17 @@
 
 线路查询
 
+ipip.net
+
+http://ping.pe
+
 https://bgp.he.net/
 
 https://ip.awk.sh
 
 http://ip111.cn/
+
+https://www.atrandys.com/2018/1214.html
 
 备用命令
 
