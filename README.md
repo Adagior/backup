@@ -62,17 +62,31 @@ wget --no-check-certificate https://raw.githubusercontent.com/FunctionClub/Fail2
 firewall-cmd --zone=public --permanent --add-port=80/udp
 firewall-cmd --zone=public --permanent --add-port=80/tcp
 firewall-cmd --zone=public --permanent --add-port=8080/udp
-firewall-cmd --zone=public --permanent --add-port=8080/tcp
+firewall-cmd --zone=public --permanent --add-port=8080-8088/tcp
+firewall-cmd --zone=public --permanent --add-port=443/udp
+firewall-cmd --zone=public --permanent --add-port=443/tcp
 firewall-cmd --zone=public --permanent --add-port=1200/udp
 firewall-cmd --zone=public --permanent --add-port=27000-27050/udp
 firewall-cmd --zone=public --permanent --add-port=27000-27050/tcp
+firewall-cmd --zone=public --permanent --add-port=3478-3479/udp
+firewall-cmd --zone=public --permanent --add-port=5060-5062/udp
+firewall-cmd --zone=public --permanent --add-port=12000-29999/udp
+firewall-cmd --zone=public --permanent --add-port=32801-32825/udp
+firewall-cmd --zone=public --permanent --add-port=3128/tcp
+firewall-cmd --zone=public --permanent --add-port=3659/tcp
+firewall-cmd --zone=public --permanent --add-port=8888/tcp
+firewall-cmd --zone=public --permanent --add-port=20000-26000/tcp
+firewall-cmd --zone=public --permanent --add-port=32801-32803/tcp
+firewall-cmd --zone=public --permanent --add-port=10011-10019/tcp
+firewall-cmd --zone=public --permanent --add-port=5063/udp
 
 firewall-cmd --zone=public --permanent --remove-service=ssh
 
 systemctl restart firewalld.service
 
+netstat -ntu | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n
+ 
 chmod a+x
-
 
 sync; echo 3 > /proc/sys/vm/drop_caches
 swapoff -a && swapon -a
