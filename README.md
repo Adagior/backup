@@ -23,7 +23,7 @@ bbr
 ```
 https://www.vultr.com/docs/how-to-deploy-google-bbr-on-centos-7
 
-yum install net-tools -y
+
 sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 sudo yum --enablerepo=elrepo-kernel install kernel-ml -y
@@ -109,4 +109,5 @@ vi /etc/ssh/sshd_config
 nohup ？？？ >/dev/null 2>&1 &
 
 yum install mtr -y
+yum install net-tools -y
 ```
