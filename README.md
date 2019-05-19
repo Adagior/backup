@@ -110,4 +110,5 @@ nohup ？？？ >/dev/null 2>&1 &
 
 yum install mtr -y
 yum install net-tools -y
+yum install bind-utils -y
 ```
