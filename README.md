@@ -112,3 +112,7 @@ yum install mtr -y
 yum install net-tools -y
 yum install bind-utils -y
 ```
+
+asf
+
+https://steamcn.com/t413908-1-1
