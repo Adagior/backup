@@ -59,6 +59,8 @@ wget --no-check-certificate https://raw.githubusercontent.com/FunctionClub/Fail2
 ```
 
 ```
+firewall-cmd --zone=public --permanent --add-port=53/udp
+firewall-cmd --zone=public --permanent --add-port=53/tcp
 firewall-cmd --zone=public --permanent --add-port=80/udp
 firewall-cmd --zone=public --permanent --add-port=80/tcp
 firewall-cmd --zone=public --permanent --add-port=8080/udp
@@ -80,11 +82,20 @@ firewall-cmd --zone=public --permanent --add-port=32801-32803/tcp
 firewall-cmd --zone=public --permanent --add-port=10011-10019/tcp
 firewall-cmd --zone=public --permanent --add-port=5063/udp
 
+firewall-cmd --zone=public --permanent --add-port=8877/tcp
+firewall-cmd --zone=public --permanent --add-port=8877/udp
+firewall-cmd --zone=public --permanent --add-port=8899/tcp
+firewall-cmd --zone=public --permanent --add-port=8899/udp
+firewall-cmd --zone=public --permanent --add-port=11111/tcp
+firewall-cmd --zone=public --permanent --add-port=11111/udp
+firewall-cmd --zone=public --permanent --add-port=1990/tcp
+firewall-cmd --zone=public --permanent --add-port=1990/udp
+
 firewall-cmd --zone=public --permanent --remove-service=ssh
 
 systemctl restart firewalld.service
 
-netstat -ntu | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n
+netstat -na|grep ESTABLISHED|awk '{print $5}'|awk -F: '{print $1}'
  
 chmod a+x
 
