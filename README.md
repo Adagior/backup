@@ -18,6 +18,9 @@ https://www.atrandys.com/2018/1214.html
 
 
 v2ray      https://233yes.com/post/1/
+turnsafe   
+https://tunsafe.com/download
+yum install -y wget && wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
 
 bbr
 ```
