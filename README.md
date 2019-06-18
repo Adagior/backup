@@ -19,6 +19,8 @@ https://www.atrandys.com/2018/1214.html
 
 v2ray      https://233yes.com/post/1/
 
+https://raw.githubusercontent.com/233boy/v2ray/master/install.sh
+
 bbr
 ```
 https://www.vultr.com/docs/how-to-deploy-google-bbr-on-centos-7
