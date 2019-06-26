@@ -126,6 +126,9 @@ nohup ？？？ >/dev/null 2>&1 &
 yum install mtr -y
 yum install net-tools -y
 yum install bind-utils -y
+
+yum install glibc-static libstdc++-static
+yum -y install gcc gcc+ gcc-c++
 ```
 
 asf
