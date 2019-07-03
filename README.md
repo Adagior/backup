@@ -128,7 +128,8 @@ yum install net-tools -y
 yum install bind-utils -y
 
 yum install glibc-static libstdc++-static
-yum -y install gcc gcc+ gcc-c++
+yum -y install gcc+ gcc-c++
+make nolimit_release
 ```
 
 asf
