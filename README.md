@@ -133,7 +133,8 @@ https://developer.arm.com/tools-and-software/open-source-software/developer-tool
 tar -jxvf
 sudo vi  /etc/profile
 export PATH=$PATH:???
-
+source /etc/profile
+echo $PATH
 
 make nolimit_release
 ```
