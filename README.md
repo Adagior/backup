@@ -95,9 +95,18 @@ firewall-cmd --zone=public --permanent --add-port=11111/udp
 firewall-cmd --zone=public --permanent --add-port=1990/tcp
 firewall-cmd --zone=public --permanent --add-port=1990/udp
 
+firewall-cmd --add-masquerade --permanent
+firewall-cmd --permanent --add-forward-port=port=8888:proto=tcp:toaddr=?.?.?.?:toport=8877
+firewall-cmd --permanent --add-forward-port=port=8888:proto=udp:toaddr=?.?.?.?:toport=8877
+
 firewall-cmd --zone=public --permanent --remove-service=ssh
 
 systemctl restart firewalld.service
+
+firewall-cmd --direct --remove-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
+firewall-cmd --permanent --direct --remove-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
+firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
+firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
 
 netstat -na|grep ESTABLISHED|awk '{print $5}'|awk -F: '{print $1}'
  
