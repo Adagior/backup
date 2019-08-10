@@ -25,9 +25,12 @@ https://www.moerats.com/archives/784/
 
 
 备用命令
+
+测试
 ```
 wget -qO- bench.sh | bash
-wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-Server-Bench-Test/master/linuxtest.sh
+https://www.moerats.com/archives/626/
 ```
 bbr
 ```
