@@ -15,6 +15,9 @@ http://ip111.cn/
 https://www.atrandys.com/2018/1214.html
 
 
+软件源
+
+https://www.moerats.com/archives/784/
 
 
 
