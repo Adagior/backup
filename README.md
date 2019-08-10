@@ -16,11 +16,9 @@ https://www.atrandys.com/2018/1214.html
 
 
 
-socat    https://www.moerats.com/archives/97/
 
-v2ray      https://233yes.com/post/1/
 
-https://raw.githubusercontent.com/233boy/v2ray/master/install.sh
+
 
 
 备用命令
@@ -150,3 +148,14 @@ yum install bind-utils -y
 asf
 
 https://steamcn.com/t413908-1-1
+
+
+socat 
+
+https://www.moerats.com/archives/97/
+
+v2ray  
+
+https://233yes.com/post/1/
+
+https://raw.githubusercontent.com/233boy/v2ray/master/install.sh
