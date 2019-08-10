@@ -30,6 +30,8 @@ https://www.moerats.com/archives/784/
 ```
 wget -qO- bench.sh | bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/chiakge/Linux-Server-Bench-Test/master/linuxtest.sh
+bash linuxtest.sh a
+
 https://www.moerats.com/archives/626/
 ```
 bbr
