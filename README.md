@@ -24,6 +24,7 @@ https://www.atrandys.com/2018/1214.html
 备用命令
 ```
 wget -qO- bench.sh | bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/ZBench/master/ZBench-CN.sh && bash ZBench-CN.sh
 ```
 bbr
 ```
