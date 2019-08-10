@@ -14,7 +14,6 @@ http://ip111.cn/
 
 https://www.atrandys.com/2018/1214.html
 
-备用命令
 
 
 socat    https://www.moerats.com/archives/97/
@@ -23,6 +22,11 @@ v2ray      https://233yes.com/post/1/
 
 https://raw.githubusercontent.com/233boy/v2ray/master/install.sh
 
+
+备用命令
+```
+wget -qO- bench.sh | bash
+```
 bbr
 ```
 https://www.vultr.com/docs/how-to-deploy-google-bbr-on-centos-7
