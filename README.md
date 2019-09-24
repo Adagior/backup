@@ -154,6 +154,10 @@ yum install bind-utils -y
 
 ```
 
+openssl
+
+https://blog.csdn.net/oLiuKong/article/details/52077754
+
 asf
 
 https://steamcn.com/t413908-1-1
