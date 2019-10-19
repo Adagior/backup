@@ -50,6 +50,8 @@ echo 'net.ipv4.tcp_congestion_control=bbr' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 
 ```
+
+socat
 ```
 bash <(curl -s -L https://233yes.com/v2ray.sh)
 
@@ -57,7 +59,11 @@ yum install -y socat
 socat TCP4-LISTEN:10000,reuseaddr,fork TCP4:1.1.1.1:10000 >> socat.log 2>&1 &
 socat UDP4-LISTEN:10000,reuseaddr,fork UDP4:1.1.1.1:10000 >> socat.log 2>&1 &
 ```
-
+trojan
+```
+tar -Jxf 
+nohup trojan >/dev/null 2>&1 &
+```
 
 bbr
 ```
