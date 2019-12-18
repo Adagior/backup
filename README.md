@@ -1,5 +1,11 @@
 # backup
 
+dns
+
+https://www.publicdns.xyz/
+
+https://ilpl.me/2018/08/17/public-DNS-5353-list/
+
 线路查询
 
 ipip.net
