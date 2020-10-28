@@ -146,6 +146,7 @@ swapoff -a && swapon -a
 screen -ls 
 kill -9 pid
 rm -rf /test
+echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'
 
 vi /etc/crontab
 30 19 * * * root reboot
