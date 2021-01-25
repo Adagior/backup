@@ -1,5 +1,9 @@
 # backup
 
+gfwlist
+
+https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+
 dns
 
 https://www.publicdns.xyz/
