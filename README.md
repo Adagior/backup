@@ -189,3 +189,5 @@ v2ray
 https://233yes.com/post/1/
 
 https://raw.githubusercontent.com/233boy/v2ray/master/install.sh
+
+https://github.com/KiriKira/vTemplate
