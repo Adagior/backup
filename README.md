@@ -191,3 +191,18 @@ https://233yes.com/post/1/
 https://raw.githubusercontent.com/233boy/v2ray/master/install.sh
 
 https://github.com/KiriKira/vTemplate
+
+
+net
+```
+1. Press Windows + X and invoke PowerShell console
+
+2. Enter Get-NetAdapterBinding and press Enter
+
+PS C:\Windows\system32> Disable-NetAdapterBinding -Name 以太网 -ComponentID ms_pacer
+PS C:\Windows\system32> Disable-NetAdapterBinding -Name 以太网 -ComponentID ms_lltdio
+PS C:\Windows\system32> Disable-NetAdapterBinding -Name 以太网 -ComponentID ms_rspndr
+PS C:\Windows\system32> Disable-NetAdapterBinding -Name 以太网 -ComponentID ms_implat
+PS C:\Windows\system32> Disable-NetAdapterBinding -Name 以太网 -ComponentID ms_server
+PS C:\Windows\system32> Disable-NetAdapterBinding -Name 以太网 -ComponentID ms_lldp
+```
