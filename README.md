@@ -4,6 +4,10 @@ gfwlist
 
 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 
+netreset
+
+https://docs.microsoft.com/en-us/powershell/module/netadapter/reset-netadapteradvancedproperty?view=windowsserver2022-ps
+
 dns
 
 https://www.publicdns.xyz/
