@@ -4,10 +4,14 @@ gfwlist
 
 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 
-netreset
+win
+```
+dism /online /enable-feature /featurename:NetFx3 /All /Source:e:\sources\sxs\ /LimitAccess
 
+ Reset-NetAdapterAdvancedProperty -Name "MyAdapter" -DisplayName "*"
+ 
 https://docs.microsoft.com/en-us/powershell/module/netadapter/reset-netadapteradvancedproperty?view=windowsserver2022-ps
-
+```
 dns
 
 https://www.publicdns.xyz/
