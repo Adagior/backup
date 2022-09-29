@@ -147,6 +147,14 @@ firewall-cmd --permanent --direct --remove-rule ipv4 nat POSTROUTING 0 -s 10.8.0
 firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
 firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
 
+
+yum
+cd /etc/yum.repos.d/
+sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+yum update -y
+
+
 netstat -na|grep ESTABLISHED|awk '{print $5}'|awk -F: '{print $1}'
  
 chmod a+x
