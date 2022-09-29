@@ -140,6 +140,8 @@ firewall-cmd --permanent --add-forward-port=port=8888:proto=udp:toaddr=?.?.?.?:t
 
 firewall-cmd --zone=public --permanent --remove-service=ssh
 
+systemctl start firewalld.service
+systemctl enable firewalld.service
 systemctl restart firewalld.service
 
 firewall-cmd --direct --remove-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
