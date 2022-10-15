@@ -80,7 +80,7 @@ socat UDP4-LISTEN:10000,reuseaddr,fork UDP4:1.1.1.1:10000 >> socat.log 2>&1 &
 trojan
 ```
 tar -Jxf 
-nohup trojan >/dev/null 2>&1 &
+nohup ./trojan >/dev/null 2>&1 &
 ```
 
 bbr
