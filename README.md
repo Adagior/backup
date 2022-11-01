@@ -71,7 +71,7 @@ sudo sysctl -p
 
 socat
 ```
-bash <(curl -s -L https://233yes.com/v2ray.sh)
+bash <(curl -s -L https://git.io/v2ray.sh)
 
 yum install -y socat
 socat TCP4-LISTEN:10000,reuseaddr,fork TCP4:1.1.1.1:10000 >> socat.log 2>&1 &
