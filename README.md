@@ -71,6 +71,7 @@ sudo sysctl -p
 
 socat
 ```
+cp  /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 bash <(curl -s -L https://git.io/v2ray.sh)
 
 yum install -y socat
