@@ -73,6 +73,8 @@ socat
 ```
 cp  /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 bash <(curl -s -L https://git.io/v2ray.sh)
+yum clean all 
+yum --disablerepo=epel\* remove epel-release
 
 yum install -y socat
 socat TCP4-LISTEN:10000,reuseaddr,fork TCP4:1.1.1.1:10000 >> socat.log 2>&1 &
