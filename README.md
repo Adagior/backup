@@ -11,6 +11,8 @@ dism /online /enable-feature /featurename:NetFx3 /All /Source:e:\sources\sxs\ /L
  Reset-NetAdapterAdvancedProperty -Name "MyAdapter" -DisplayName "*"
  
 https://docs.microsoft.com/en-us/powershell/module/netadapter/reset-netadapteradvancedproperty?view=windowsserver2022-ps
+
+https://my.visualstudio.com/downloads
 ```
 dns
 
